@@ -10,7 +10,7 @@ class SpindlerBattery(BaseBattery):
             return True
 
         time_difference = date.today().year - last_service_date.year
-        return time_difference >= 2
+        return time_difference >= 3
 
     def update_last_service_info(self, current_date):
         self.last_service_date = current_date
